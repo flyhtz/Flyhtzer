@@ -1,5 +1,6 @@
 # Flyhtzer
 Flyhtzer is a Discord Bot/Webhook based Rat stealing passwords cookies and much more!
+(No discord tokens yet)
 
 # Usage
 How to use Flyhtzer:
