@@ -4,9 +4,9 @@ Flyhtzer is a Discord Bot/Webhook based Rat stealing passwords cookies and much 
 # Usage
 How to use Flyhtzer:
 
-**open cmd in directory of "Flyhtzer.py"**
+**Open cmd in directory of "Flyhtzer.py"**
 
-**than type**
+**Than type**
 
 ```bash
 
@@ -22,11 +22,11 @@ pip install -r requirements.txt
 
 **Convert Flyhtzer to an EXE using pyinstaller** *(optional but recommended)*
 
-**(how to conver Flyhtzer.py to exe)**
+**(How to conver Flyhtzer.py to exe)**
 
-**open cmd in directory of "Flyhtzer.py"**
+**Open cmd in directory of "Flyhtzer.py"**
 
-**than type**
+**Than type**
 
 ```bash
 
