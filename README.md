@@ -41,7 +41,7 @@ pyinstaller --onefile Flyhtzer.py
 
 # Features
 
-**Discord Logger** 👾 *(Logs relating to Discord Account)*
+**Discord Logger (soon)** 👾 *(Logs relating to Discord Account)*
 
     Payment Information
       [1] Nitro (true/false)
