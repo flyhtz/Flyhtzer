@@ -1,6 +1,7 @@
 # Flyhtzer
 Flyhtzer is a Discord Bot/Webhook based Rat stealing passwords cookies and much more!
-(No discord tokens yet)
+
+# THE ONLY USE FOR THIS PROGRAM IS EDUCATIONAL PURPOSES DONT USE IT FOR ANY ILLEGAL ACTIVITY
 
 # Usage
 How to use Flyhtzer:
@@ -40,30 +41,6 @@ pyinstaller --onefile Flyhtzer.py
 
 
 # Features
-
-**Discord Logger** 👾 *(Logs relating to Discord Account)*
-
-    Payment Information
-      [1] Nitro (true/false)
-      [2] Payments Stored (true/false)
-      
-    Account Details
-      [1] Email
-      [2] Phone Number
-      
-    Account Settings
-      [1] User Flags
-      [2] Nitro Type
-      [3] Email Verified (true/false)
-      [4] 2FA (true/false)
-      [5] NSFW (true/false)
-      
-    Billing Information
-      [1] Email, Name, Address, City, State, ZIP
-      
-    Account Token
-      [1] Discord Token
-      [2] Account Platform 
     
 **PC Logger** 💻 
 
